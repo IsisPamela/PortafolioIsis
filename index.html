@@ -1,0 +1,699 @@
+<!doctype html>
+<html>
+<head>
+<!--Idioma español -->	
+<meta charset="utf-8">
+  <title>DsignerIP</title> <!--Nombre de la pestaña de la página -->	
+
+
+<!--Icono de pestaña -->
+<link rel="icon" href="img/ico/LogoICO_1.ico" type="image/ico" sizes="16x16"> <!-- Imagen del logo -->	
+
+
+<!--Responsividad de viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Palabras clave -->	
+<meta name="Keywords" content="ilustrador, arte digital, adobe illustrador, artista digital, ilustraciones, proceso creativo, dibujo digital, fotografia, diseño, edicion de video, animaciones">	
+<!--Definir descripción del sitio web -->		
+<meta name="Description" content="Soy Isis González, artista digital guanajuatense, apasionada por cada proyecto que elabora. Espero que el contenido de mi página te inspire a contratar mis servicios, seguro puedo crear algo muy especial para ti.">
+<!--Autor del sitio -->	
+<meta name="autor" content="Isis Glenn">
+	
+<!--Librerias para bootstrap -->
+<link rel="stylesheet" 
+href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>	
+<!-- Anime JS carga pagina-->	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>	
+	
+<!-- Tipografía Titúlos PT SERIF-->		
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+
+<!-- Tipografía Texto 2 -->	
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+	
+<!-- Para ejemplo 1 Galería -->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>	
+<!-- Core theme CSS (includes Bootstrap)-->
+    
+	
+<link href="css/misestilos.css" rel="stylesheet"> <!-- Enlazamiento con el archivo css que permitirá cambiar el estilo de mi archivo HTML -->	
+		
+</head>
+	
+	<!-- Pantalla de inicio -->	
+
+<body class="body-carga" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div class="container-fluid pantalla-carga px-0">
+    <div class="contenedor-loader">
+        <div class="loader">
+            <section class="container-fluid p-0 "> 
+            </section>
+        </div>
+    </div>
+    </div>
+    
+	<!-- Barra de navegación -->	
+
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" style="z-index: 19" id="myScrollspy"> <!-- Alineación de los elementos de la página -->	
+
+			
+        <!-- Marca/logo -->
+			
+            <a class="navbar-brand" href="#">
+                <img src="img/fondos/LogoColor.png" alt="logo" width="50" height="50" id="logo" style="width:40px;"> <!-- Aquí se carga la imagen del logotipo -->	
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <!--Esto funciona para declarar botones -->	
+                <span class="navbar-toggler-icon"></span> 
+            </button> 
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <!-- Links o hipervínculos para que los botones nos dirija a las secciones que queramos ver -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#inicio" "#logo">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#sobremi">SOBRE MÍ</a>
+                    </li>  
+                    <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">GALERÍA</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#servicios">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#contacto">CONTACTO</a>
+                    </li>  
+                </ul>
+            </div>
+        </nav>    
+    </header>		
+	
+	<main>
+    <!-- INICIO  -->
+	<section class="container-fluid p-0 mt-5" id="inicio">  
+		 <img class="img-fluid" src="img/fondos/Portada_1.png" alt="Fondo" tittle="Imagen inicio">         
+        </div>
+	</section>
+		
+	<!--Seccion SOBRE MÍ-->
+    <section class="container-fluid text-center d-flex flex-wrap align-content-center py-5 bg2 min-vh-100" id="sobremi">
+            <div class="mx-auto my-auto">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 d-flex flex-wrap align-content-center"> 
+                <div class="mx-auto"> 
+                <h1>¡Hola!</h1> 
+                <img src="img/fondos/Foto.png" alt="Fotografía" tittle="sobre mí" class="img-sobremi">
+                <p class="mt-4"> Soy Isis González, artista digital guanajuatense. Me gusta ser multidisciplinaria y es por eso que realizo cinematografía y edición de video, diseño publicitario, animación e ilustración. Me considero creativa, responsable y ordenada. Además me gusta ser divertida, pero siempre con un toque sofisticado y formal. ¡Me encanta lo que hago!</p> 
+                </div> 
+                </div>
+                </div>
+            </div>
+        </section>	
+		
+		
+    <!-- CARRUSEL -->				
+    <div id="demo" class="carousel slide m-0 p-0" data-ride="carousel"> 
+     <ul class="carousel-indicators"> 
+
+       <li data-target="#demo" data-slide-to="0" class="active"></li> <!-- esta parte declara el número de imágenes que tendrá mi carrusel -->	
+
+       <li data-target="#demo" data-slide-to="1" ></li> 
+
+       <li data-target="#demo" data-slide-to="2" ></li> 
+
+    </ul> 
+
+        <div class="carousel-inner"> <!-- aquí el carrusel se moverá por sí solo, pero a su vez, cuenta con flechitas para verlo al gusto -->	
+        <div class="carousel-item active"> 
+
+        <img src="img/fondos/MineralPozos_3.png" alt="Portada1" tittle="Carrusel1"> <!-- Primera imagen del carrusel -->	
+        <div class="carousel-caption texto-normal"> 
+
+        <h1 >MINERAL DE POZOS, SAN LUIS DE LA PAZ</h1> 
+        <p>Serie de ilustraciones capturando la esencia natural y colorida que nos caracteriza en el Estado de Guanajuato.</p> 	
+
+        </div> 
+            <div class="carousel-caption texto-celular"> 
+
+        <h1 >MINERAL DE POZOS</h1> 
+        <p>Representando un lugar especial en el Estado de Guanajuato</p> 	
+
+        </div>
+        </div> 
+
+        <div class="carousel-item"> 
+        <img src="img/fondos/DoloresH_1.png" alt="Portada2" tittle="Carrusel2"> 
+        <div class="carousel-caption"> 
+        <h1>LA TUMBA DE JOSÉ ALFREDO JIMÉNEZ, DOLORES HIDALGO</h1>
+        </div>    
+        </div> 
+			
+
+        <div class="carousel-item"> 
+        <img src="img/fondos/Corralejo_2.png" alt="Portada3" tittle="Carrusel3" > 
+        <div class="carousel-caption">
+        <h1>EX - HACIENDA DE CORRALEJO, PÉNJAMO</h1> 
+        </div> 
+        </div> 
+
+        <a class="carousel-control-prev" href="#demo" data-slide="prev"> 
+             <span class="carousel-control-prev-icon"></span> 
+             </a> 
+
+             <a class="carousel-control-next" href="#demo" data-slide="next"> 
+             <span class="carousel-control-next-icon"></span> 
+              </a> 
+
+       </div> 
+       </div> 	
+
+    <!--Seccion Galeria-->
+	
+    <section class="page-section bg-light py-5" id="portfolio"> <!-- Demostración de los proyectos que he realizado y, a su vez, si das clic en las imágenes, podrás ver una breve descripción de ella -->	
+		
+                <div class="container">
+                    <div class="text-center">
+                        <h1 class="section-heading text-uppercase my-5">GALERÍA</h1> <!-- Título -->	
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                   </div>
+									
+								<!-- Aquí se declaran las imágenes y el año en que fueron realizados dichos proyectos -->	
+									<!-- Imagen 1 -->	
+                                    <img class="img-fluid" src="img/galeria/1_BarbieKen_Mesa de trabajo 1.png" alt="Barbie & Max Steel" tittle="Imagen 1" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Barbie y Max Steel</div>
+                                    <div class="portfolio-caption-subheading text-muted">2023</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+									<!-- Imagen 2 -->	
+                                    <img class="img-fluid" src="img/galeria/3_Silao_Mesa de trabajo 1.png" alt="Ilustración Silao" tittle="Imagen 2" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Ilustración del Estado de Guanajuato: Silao</div>
+                                    <div class="portfolio-caption-subheading text-muted">2023</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="img/galeria/2_CartelCervantino_Mesa de trabajo 1.png" alt="Cartel Cervantino" tittle="Imagen 3" />
+                                </a>
+								
+								<!-- Imagen 3 -->	
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Propuesta 51 Festival Internacional Cervantino</div>
+                                    <div class="portfolio-caption-subheading text-muted">2023</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="img/galeria/4_MariaIzq.png" alt="Postal de México" tittle="Image4" />
+                                </a>
+								
+								<!-- Imagen 4 -->	
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Bellas Artes en México. Pintura: María Izquierdo</div>
+                                    <div class="portfolio-caption-subheading text-muted">2023</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="img/galeria/6_Prevencion.png" alt="Prevención Accidentes" tittle="imagen5" />
+                                </a>
+								
+								<!-- Imagen 5 -->	
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Cartel Prevención contra Accidentes</div>
+                                    <div class="portfolio-caption-subheading text-muted">2021</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="img/galeria/5_MariaF.png" alt="Cine Mexicano" title="imagen6" />
+                                </a>
+								
+								<!-- Imagen 6 -->	
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Bellas Artes en México. Cine Mexicano: María Félix y Jorge Negrete</div>
+                                    <div class="portfolio-caption-subheading text-muted">2023</div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="img/galeria/AloHalo.png" alt="Retrato Halo" title="imagen7" />
+                                </a>
+								
+								<!-- Imagen 7 -->	
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Retrato estilo Halo</div>
+                                    <div class="portfolio-caption-subheading text-muted">2023</div>
+                                </div>
+                            </div>
+                        </div>
+             <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal8">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="img/galeria/Cyborg.png" alt="Chica Cyborg" title="imagen8"/>
+                                </a>
+								
+								<!-- Imagen 8 -->	
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Cyborhumana</div>
+                                    <div class="portfolio-caption-subheading text-muted">2021</div>
+                                </div>
+                            </div>
+                        </div>
+             <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal9">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="img/galeria/Ladybug.png" alt="Autorretrato Ladybug" title="imagen9" />
+                                </a>
+								
+								<!-- Imagen 9 -->	
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Autorretrato siendo Ladybug</div>
+                                    <div class="portfolio-caption-subheading text-muted">2023</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>		
+
+    <!-- En esta sección es donde, al dar clic, abre la imagen en grande junto con una pequeña descripción al final -->
+        <!-- Imagen 1 -->
+				<!-- Primero establecí el ícono para cerrar la pestaña, junto con la función correspondiente -->	
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="img/ico/Cerrar.png" alt="Close modal" style="width:30px"/></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+									
+                                    <!-- Aquí van los detalles -->
+                                    <h1 class="text-uppercase">Barbie y Max Steel</h1> <!-- Título -->	
+									<p class="item-intro text-muted">2023</p> <!-- párrafo -->	
+                                    <img class="o" src="img/galeria/1_BarbieKen_Mesa de trabajo 1.png" style="width:100%"  alt="Barbie y MaxSteel" tittle="Imagen 1" />
+                                    <p> Siguiendo las tendencias, la película de Barbie significó un boom en redes sociales, por lo que realicé esta ilustración basándome en el sueño de toda niña que jugó con barbies: que el novio oficial de Barbie fuera Max Steel. Además, personalicé a Barbie como yo, y a Max Steel como luce mi novio. </p> <!-- párrafo descriptivo -->	
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Imagen 2 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="close-modal" data-dismiss="modal"><img src="img/ico/Cerrar.png" alt="Close modal" style="width:30px"/></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Descripción -->
+                                    <h1 class="text-uppercase"> Ilustración del Estado de Guanajuato: Silao</h1>
+									<p class="item-intro text-muted">2023</p>
+                                    <img class="img-fluid d-block mx-auto" src="img/galeria/3_Silao_Mesa de trabajo 1.png" alt="Ilustración Silao" title="imagen2"/>
+                                    <p> Realicé una serie de ilustraciones sobre distintos municipios del Estado de Guanajuato con el objetivo de utilizarla para una campaña publicitaria de Turismo. Este es Silao. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	
+        <!-- Imagen 3 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                      <div class="close-modal" data-dismiss="modal"><img src="img/ico/Cerrar.png" alt="Close modal" style="width:30px"/></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Descripción detallada -->
+                                    <h1 class="text-uppercase">Propuesta 51 Festival Internacional Cervantino</h1>
+									<p class="item-intro text-muted">2023</p>
+                                    <img class="img-fluid d-block mx-auto" src="img/galeria/2_CartelCervantino_Mesa de trabajo 1.png" alt="Cartel Cervantino" title="imagen3" />
+                                    <p>El Festival Internacional Cervantino lanzó una convocatoria dirigida a estudiantes interesada(o)s en participar para diseñar su nueva imagen 2023. Los invitados de honor en esta edición son el Estado de Sonora y Estados Unidos. Esta fue mi propuesta: unirlos por medio del desierto.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	
+        <!-- Imagen 4 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                      <div class="close-modal" data-dismiss="modal"><img src="img/ico/Cerrar.png" alt="Close modal" style="width:30px"/></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Descripción detallada -->
+                                    <h1 class="text-uppercase">Bellas Artes en México. Pintura: María Izquierdo</h1>
+                                    <p class="item-intro text-muted">2023</p>
+                                    <img class="img-fluid d-block mx-auto" src="img/galeria/4_MariaIzq.png" alt="Ilustración Pintura Mexicana" title="imagen4" />
+                                    <p> Serie de ilustraciones llamadas "Memorias de México" basadas en las Bellas Artes de México, realizadas en conjunto con Melissa Alejandra Mosqueda Morales y Janet Lizeth Arroyo Ramírez, estudiantes de DICIS, para la revista Espiral de la Universidad de Guanajuato.</p>
+									<p>Pintura: María Izquierdo.</p>
+									<a>https://www.espiral.ugto.mx/galerias/</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	
+        <!-- Imagen 5 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                      <div class="close-modal" data-dismiss="modal"><img src="img/ico/Cerrar.png" alt="Close modal" style="width:30px"/></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Descripción detallada -->
+                                    <h1 class="text-uppercase">Cartel Prevención contra Accidentes</h1>
+									<p class="item-intro text-muted">2021</p>
+                                    <img class="img-fluid d-block mx-auto" src="img/galeria/6_Prevencion.png" alt="Ilustración cartel prevención accidentes" title="imagen5" />
+                                    <p>Cartel realizado para el concurso Prevención contra Accidentes de la Universidad de Guanajuato donde incita a hacer uso del cinturón de seguridad mientras utilizamos cualquier tipo de transporte terrestre o incluso aéreo. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	
+        <!-- Imagen 6 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                      <div class="close-modal" data-dismiss="modal"><img src="img/ico/Cerrar.png" alt="Close modal" style="width:30px"/></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Descripción detallada -->
+                                    <h1 class="text-uppercase">Bellas Artes en México. Cine Mexicano: María Félix y Jorge Negrete</h1>
+                                    <p class="item-intro text-muted">2023</p>
+                                    <img class="img-fluid d-block mx-auto" src="img/galeria/5_MariaF.png" alt="Ilustración Cine Mexicano" title="imagen6"/>
+                                    <p>Serie de ilustraciones llamadas "Memorias de México" basadas en las Bellas Artes de México, realizadas en conjunto con Melissa Alejandra Mosqueda Morales y Janet Lizeth Arroyo Ramírez, estudiantes de DICIS, para la revista Espiral de la Universidad de Guanajuato.</p>
+									<p>Cine de Oro Mexicano: María Félix y Jorge Negrete</p>
+										<a>https://www.espiral.ugto.mx/galerias/</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	
+		<!-- Imagen 7 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                      <div class="close-modal" data-dismiss="modal"><img src="img/ico/Cerrar.png" alt="Close modal" style="width:30px"/></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Descripción detallada -->
+                                    <h1 class="text-uppercase">Retrato estilo Halo</h1>
+                                    <p class="item-intro text-muted">2023</p>
+                                    <img class="img-fluid d-block mx-auto" src="img/galeria/AloHalo.png" alt="Retrato Halo" title="imagen7" />
+                                    <p>Retrato realizado para un streamer de Twitch cuyo gusto principal es el videojuego de Halo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	
+        <!-- Imagen 8-->
+        <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                      <div class="close-modal" data-dismiss="modal"><img src="img/ico/Cerrar.png" alt="Close modal" style="width:30px"/></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Descripción detallada -->
+                                    <h1 class="text-uppercase">Cyborhumana</h1>
+                                    <p class="item-intro text-muted">2021</p>
+                                    <img class="img-fluid d-block mx-auto" src="img/galeria/Cyborg.png" alt="Cyborg" title="imagen8"/>
+                                    <p>Realicé esta ilustración para una clase, pero el resultado fue tan satisfactorio para mí que ahora es uno de mis trabajos favoritos. La tarea hablaba sobre el transhumanismo, y cómo los cyborgs y las inteligencias artificiales son una realidad no tan lejana y que incluso ya normalizamos mucho de esto.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	
+        <!-- Imagen 9-->
+        <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                      <div class="close-modal" data-dismiss="modal"><img src="img/ico/Cerrar.png" alt="Close modal" style="width:30px"/></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Descripción detallada -->
+                                    <h1 class="text-uppercase">Autorretrato Ladybug</h1>
+                                    <p class="item-intro text-muted">2023</p>
+                                    <img class="img-fluid d-block mx-auto" src="img/galeria/Ladybug.png" alt="ilustración ladybug" title="imagen9" />
+                                    <p>Una de mis series favoritas es Ladybug y siempre quise saber cómo me vería yo siendo Ladybug, por lo que mezclé características mías con este personaje y este fue el resultado.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	
+<!-- Sigueinte sección: Material Extra -->
+<div class="container-fluid text-center d-flex flex-wrap align-content-center py-5 bg2 min-vh-100 position-relative"  id="seccion5" > 
+<div class="row "> 	
+<div class="col-lg-12 col-sm-12 d-flex flex-wrap align-content-center  bg5"> 
+<div class="mx-auto my-auto p-5"> 
+<h1>MATERIAL EXTRA</h1>	                                    <!-- Título -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OZQzbhQM3Kc?si=SCad8d_acpFOjJfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>	<!-- Link de YouTube para poner un video -->
+</div> 
+</div>  
+<div class="mx-auto  p-3 m-0 "> 
+<p>Rotoscopía basada en la canción y videoclip 'Shout' de Tears For Fears</p> 	<!-- Descripción de lo que contiene el video -->
+</div> 
+</div> 
+</div> 		
+		
+
+	
+  <!--Sección Servicios-->  
+	 <div class="container-fluid  bg-blanco py-5" id="servicios">
+	 <div class="row">
+	 <div class="col-lg-12">
+     <h1 class="text-center">SERVICIOS</h1>
+      </div>
+	  
+			 
+    <!-- Modal Diseño Publicidad -->
+	<div class="col-sm-12 col-md-6 d-flex flex-wrap align-content-center min-vh-100  p-3 bg-light" id="portfolio">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#diseño">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                   </div>
+                                    <img class="img-fluid" src="img/servicios/BannerPSD.png" alt="Cartel DJ Smiley" tittle="imagen10"/>
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Diseño de publicidad</div>
+									  <div class="portfolio-caption-subheading text-muted"> 2023 </div>
+                                </div>
+                            </div>
+                           </div>
+		 
+	<!-- Modal Personaje-->
+	<div class="col-sm-12 col-md-6 d-flex flex-wrap align-content-center min-vh-100  p-3 bg-light" id="portfolio">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#modalilustracion">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                   </div>
+                                    <img class="img-fluid" src="img/servicios/ilustracion.png" alt="Diseño publicitario" title="imagen11" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Personajes personalizados</div>
+									<div class="portfolio-caption-subheading text-muted">2021</div>
+                                </div>
+                            </div>
+                            </div>
+        </div>
+	</div>
+	
+	
+	<!-- Modal abrir Diseño de Publicidad -->
+    <div class="portfolio-modal modal fade" id="modalpersonaje" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="img/ico/Cerrar.png" alt="Close modal" style="width:30px"/></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+									
+                                    <!-- Descripción detallada -->
+                                    <h1 class="text-uppercase">Diseño publicitario</h1>
+									<img src="img/servicios/diseño.png" width="100%" alt="Diseño publicitario" tittle="imagen10">
+                                    <p>¿Necesitas ayuda a que tu negocio tenga más alcance? ¡Contáctame! Cuento con distintos paquetes accesibles y flexibles.</p>
+                                    <ul class="list-inline">
+                                        <li>Entrega de: 3 a 5 días (depende de la cantidad) </li>
+                                        <li>Imagen: Alta resolución</li>
+                                        <li>Software: Illustrator y Photoshop</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+	
+   
+    <!-- Modal abrir Personaje-->
+    <div class="portfolio-modal modal fade" id="modalpersonajes" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="img/ico/Cerrar.png" alt="Close modal" style="width:30px"/></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">	
+									
+                                    <!-- Descripción detallada -->
+									<img src="img/servicios/ilustracion.png" width="100%" alt="Ilustración retrato" title="imagen11">
+                                    <h1 class="text-uppercase">PERSONAJE</h1>
+                                    <p>Si deseas tener tu propia caricatura en 2D, comunicate conmigo para generar una cotización.</p>
+                                    <ul class="list-inline">
+                                         <li>Entrega en: 7 días </li>
+                                        <li>Imagen: Alta resolución</li>
+                                        <li>Revisión: 1</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+	</main>
+
+    <footer> 
+		
+     <!--CONTACTO-->  
+    <div class="col-lg-12 col-sm-12 d-flex flex-wrap align-content-center bg-secundary bg11" id="contacto"> 
+    <div class="mx-auto"> 
+		
+	<h1 class="text-center  p-3 ">CONTACTO</h1>	
+	<h2 class=" text-center">d.signer.ip@gmail.com</h2>			
+	<ul class="d-flex align-content-around  py-3 ">	
+		
+	<a href=" https://www.facebook.com/isis.gonzalezarriola/" target="_blank" alt="Icono Facebook" title="Icono1">	
+    <img src="img/ico/Facebook.png" height="48px" alt="Facebook">
+    </a>
+	<img src="img/ico/separador2.png" height="48px">
+	<a href="https://www.instagram.com/d.signer.ip/" target="_blank" alt="Icono Instagram" title="Icono2">	
+    <img src="img/ico/Instagram.png" height="48px" alt="Instagram">	
+    </a>
+	<img src="img/ico/separador2.png" height="48px">
+	<a href="https://www.youtube.com/channel/UCFVS3YwpLQAqYY7u0bXT87Q" target="_blank" alt="Icono Yotube" title="Icono3">
+	<img src="img/ico/Youtube.png"  height="48px" alt="Youtube">		
+	</a>
+	<img src="img/ico/separador2.png" height="48px">	
+	</ul>  	
+	<div class="portfolio-caption-subheading text-muted text-center">DsignerIP | Isis Glenn. 2023</div>	
+    </div> 	
+    </div> 		    
+    </footer>	
+	
+	<script>
+    $(document).ready(()=>{
+        setTimeout(()=>{
+            $('.pantalla-carga').hide();
+            $('body').removeClass('body-carga');
+            $(document).scrollTop(0);
+        },0000);
+    });
+
+    </script>
+</body>
+</html>
